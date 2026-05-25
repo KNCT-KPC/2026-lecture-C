@@ -2,6 +2,7 @@
 theme: default
 background: https://cover.sli.dev
 class: text-center
+colorSchema: light
 highlighter: shiki
 lineNumbers: false
 info: |
