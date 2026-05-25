@@ -1,0 +1,20 @@
+{
+  "name": "c-lecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:day1": "slidev day1.md --open",
+    "dev:day2": "slidev day2.md --open",
+    "build:day1": "slidev build day1.md",
+    "build:day2": "slidev build day2.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@slidev/cli": "^52.15.2",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}
