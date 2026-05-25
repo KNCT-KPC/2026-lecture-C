@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:portal": "vite",
     "dev:day1": "slidev day1.md --open",
     "dev:day2": "slidev day2.md --open",
-    "build:day1": "slidev build day1.md",
-    "build:day2": "slidev build day2.md"
+    "build:portal": "vite build",
+    "build:day1": "slidev build day1.md --out dist/day1 --base /day1/",
+    "build:day2": "slidev build day2.md --out dist/day2 --base /day2/",
+    "build": "npm run build:portal && npm run build:day1 && npm run build:day2"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,10 @@
   "type": "commonjs",
   "dependencies": {
     "@slidev/cli": "^52.15.2",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "vite": "^8.0.14"
   }
 }
