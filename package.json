@@ -7,6 +7,7 @@
     "dev:portal": "cd portal && vite",
     "dev:day1": "slidev day1.md --open",
     "dev:day2": "slidev day2.md --open",
+    "dev:day3": "slidev day3.md --open",
     "build:portal": "cd portal && vite build",
     "build:day1": "slidev build day1.md --out dist/day1 --base /day1/",
     "build:day2": "slidev build day2.md --out dist/day2 --base /day2/",
