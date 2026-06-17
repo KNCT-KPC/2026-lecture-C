@@ -12,7 +12,7 @@
     "build:day1": "slidev build day1.md --out dist/day1 --base /day1/",
     "build:day2": "slidev build day2.md --out dist/day2 --base /day2/",
     "build:day3": "slidev build day3.md --out dist/day3 --base /day3/",
-    "build": "npm run build:portal && npm run build:day1 && npm run build:day2"
+    "build": "npm run build:portal && npm run build:day1 && npm run build:day2 && npm run build:day3"
   },
   "keywords": [],
   "author": "",
