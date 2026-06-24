@@ -7,6 +7,7 @@ const slides = [
   { id: 'day1', title: 'Day 1: C言語の世界へようこそ', description: 'C言語の基礎、環境構築、コンパイル、Hello Worldまで。' },
   { id: 'day2', title: 'Day 2: おまじないの解剖', description: '関数の使い方、文法のルール、printf関数、型の概念。' },
   { id: 'day3', title: 'Day 3: 変数と計算', description: '変数、データ型、式と演算子を使った基本的な計算。' },
+  { id: 'day4', title: 'Day 4: 比較と条件分岐', description: 'if文、switch文を使ったプログラムの条件分岐と各種演算子。' },
 ];
 
 function App() {
