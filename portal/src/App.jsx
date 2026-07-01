@@ -10,6 +10,7 @@ const slides = [
   { id: 'day4', title: 'Day 4: 比較と条件分岐', description: 'if文、switch文を使ったプログラムの条件分岐と各種演算子。' },
   { id: 'day5', title: 'Day 5: 繰り返し処理', description: 'for文、while文などのループ処理と、break、continueなどの制御。' },
   { id: 'day6', title: 'Day 6: 配列と文字列', description: '同じ型のデータをまとめる配列と、文字配列による文字列の表現。' },
+  { id: 'day7', title: 'Day 7: 関数を自作する', description: 'オリジナルの関数の作成、引数と戻り値、変数のスコープについて。' },
 ];
 
 function App() {
