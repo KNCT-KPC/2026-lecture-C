@@ -39,7 +39,7 @@ title: C言語講習会 Day 5 - 繰り返し処理
 
 ---
 
-# 前回出した課題の解説 (偶奇判定)
+# 前回出した課題の解説 1 (偶奇判定)
 
 <div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
 <div>
@@ -64,6 +64,86 @@ int main(void) {
         printf("奇数です\n");
     }
     
+    return 0;
+}
+```
+
+</div>
+</div>
+
+---
+
+# 前回出した課題の解説 2 (成績評価)
+
+<div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
+<div>
+
+### 課題2: if - else if
+条件を複数繋げるときは `else if` を使います。上から順番に評価されるのがポイントです！
+
+</div>
+<div>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int score;
+    scanf("%d", &score);
+    
+    if (score >= 90) {
+        printf("秀\n");
+    } else if (score >= 80) {
+        printf("優\n");
+    } else if (score >= 70) {
+        printf("良\n");
+    } else if (score >= 60) {
+        printf("可\n");
+    } else {
+        printf("不可\n");
+    }
+    return 0;
+}
+```
+
+</div>
+</div>
+
+---
+
+# 前回出した課題の解説 3 (月の名前)
+
+<div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
+<div>
+
+### 課題3: switch文
+値がぴったり決まっている場合は `switch` 文が便利です。`break;` を忘れないようにしましょう。
+
+</div>
+<div>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int month;
+    scanf("%d", &month);
+    
+    switch (month) {
+        case 1:
+            printf("January\n");
+            break;
+        case 2:
+            printf("February\n");
+            break;
+        // ... 中略 ...
+        case 12:
+            printf("December\n");
+            break;
+        default:
+            printf("エラー\n");
+            break;
+    }
     return 0;
 }
 ```

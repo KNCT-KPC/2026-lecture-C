@@ -63,6 +63,34 @@ int main(void) {
 </div>
 </div>
 
+---
+
+# 前回出した課題の解説 2
+
+<div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
+<div>
+
+### 課題2の解説
+`%d` を使って年齢（数値）を埋め込むプログラム。  
+ダブルクォーテーションの後に `,` を書き、埋め込みたい数値を書きます。
+
+</div>
+<div>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    printf("名前: 高専 太郎\n");
+    // %d の部分に 18 が入る！
+    printf("年齢: %d歳\n", 18);
+    return 0;
+}
+```
+
+</div>
+</div>
+
 <hr class="my-4" />
 
 <div class="grid grid-cols-[1fr_1fr] gap-6 text-left">
