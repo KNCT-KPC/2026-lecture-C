@@ -42,7 +42,35 @@ title: C言語講習会 Day 6 - 配列と文字列
 
 ---
 
-# 前回出した課題の解説 (FizzBuzz)
+# 前回出した課題の解説 1 (I AM KOSEN-SEI)
+
+<div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
+<div>
+
+### 200回繰り返す
+`for` 文を使って、`0` から `199` までの200回、または `1` から `200` までの200回繰り返します。  
+
+</div>
+<div>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    // 1 から 200 まで繰り返す
+    for (int i = 1; i <= 200; i++) {
+        printf("I AM KOSEN-SEI\n");
+    }
+    return 0;
+}
+```
+
+</div>
+</div>
+
+---
+
+# 前回出した課題の解説 2 (FizzBuzz)
 
 <div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
 <div>
