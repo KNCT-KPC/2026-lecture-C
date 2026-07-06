@@ -1,0 +1,171 @@
+/* ===== 共通: コードフォント設定 ===== */
+code, .shiki {
+  font-variant-ligatures: none !important;
+}
+
+/* ===== メモリグリッド (ポインタとは スライド) ===== */
+.mem-grid {
+  width: 100%;
+  font-size: 0.85em;
+  text-align: center;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.mem-header, .mem-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.mem-header {
+  background: #334155;
+  color: #fff;
+  font-weight: 600;
+}
+.mem-header span, .mem-row span {
+  padding: 6px 14px;
+  border-right: 1px solid #94a3b8;
+}
+.mem-header span:last-child, .mem-row span:last-child {
+  border-right: none;
+}
+.mem-row {
+  border-top: 1px solid #94a3b8;
+}
+.mem-active {
+  background: #dbeafe;
+  font-weight: bold;
+}
+.mem-val {
+  color: #2563eb;
+  font-size: 1.2em;
+}
+.mem-varname {
+  color: #7c3aed;
+  font-weight: bold;
+}
+.mem-dim {
+  color: #94a3b8;
+  background: #f8fafc;
+}
+
+/* ===== ポインタ参照図 (* と & のスライド) ===== */
+.ptr-diagram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78em;
+}
+.ptr-box {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  min-width: 130px;
+}
+.ptr-var {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+.ptr-target {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+.ptr-label {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 2px;
+}
+.ptr-type {
+  font-weight: normal;
+  color: #6b7280;
+  font-size: 0.85em;
+}
+.ptr-addr {
+  font-size: 0.85em;
+  color: #6b7280;
+}
+.ptr-value code {
+  color: #dc2626;
+}
+.ptr-value .val {
+  color: #2563eb;
+  font-size: 1.15em;
+}
+.ptr-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  gap: 2px;
+}
+.arrow-line {
+  color: #dc2626;
+  white-space: nowrap;
+}
+.arrow-line-rev {
+  color: #7c3aed;
+  white-space: nowrap;
+}
+
+/* ===== ダブルポインタ図 ===== */
+.dptr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 8px;
+  font-size: 0.82em;
+}
+.dptr-col {
+  text-align: center;
+}
+.dptr-box {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 6px 20px;
+  display: inline-block;
+  min-width: 220px;
+}
+.dptr-pp {
+  border-color: #e11d48;
+  background: #fff1f2;
+}
+.dptr-p {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+.dptr-v {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+.dptr-name {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+.dptr-type {
+  font-weight: normal;
+  color: #6b7280;
+  font-size: 0.85em;
+}
+.dptr-info {
+  font-size: 0.85em;
+  color: #6b7280;
+}
+.dptr-val code {
+  color: #dc2626;
+}
+.dptr-val .val {
+  color: #2563eb;
+  font-size: 1.15em;
+}
+.dptr-deref {
+  font-size: 0.8em;
+  color: #6b7280;
+  margin-top: 2px;
+  font-style: italic;
+}
+.dptr-arrow-down {
+  font-size: 1.5em;
+  color: #6b7280;
+  line-height: 1;
+}
