@@ -11,6 +11,9 @@ const slides = [
   { id: 'day5', title: 'Day 5: 繰り返し処理', description: 'for文、while文などのループ処理と、break、continueなどの制御。' },
   { id: 'day6', title: 'Day 6: 配列と文字列', description: '同じ型のデータをまとめる配列と、文字配列による文字列の表現。' },
   { id: 'day7', title: 'Day 7: 関数を自作する', description: 'オリジナルの関数の作成、引数と戻り値、変数のスコープについて。' },
+  { id: 'day8', title: 'Day 8: ポインタ', description: 'メモリとアドレスの概念、ポインタ変数、ポインタ演算、ポインタ渡し。' },
+  { id: 'day9', title: 'Day 9: ポインタの活用と構造体', description: '動的メモリ確保(malloc/free)と、異なる型をまとめる構造体の基礎。' },
+  { id: 'day10', title: 'Day 10: 分割コンパイルとビルド自動化', description: '複数ファイルでの開発、ヘッダファイル、Makefileを使ったビルド自動化。' },
 ];
 
 function App() {
