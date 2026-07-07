@@ -83,6 +83,10 @@ graph TD
 <div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
 <div>
 
+<div class="mb-4 p-2 bg-blue-50 dark:bg-blue-900 rounded text-center border border-blue-200 dark:border-blue-700">
+  📥 <a href="/source01.zip" download class="font-bold text-blue-600 dark:text-blue-300 underline">source01.zip をダウンロードする</a>
+</div>
+
 ### 1. オブジェクトファイルの作成
 `-c` オプションをつけると、実行ファイルを作らずにコンパイルだけを行い、`.o` ファイルを作成します。  
 
@@ -114,7 +118,8 @@ graph LR
 
 # プロトタイプ宣言と Warning
 
-別ファイル（`counter.c`）に書かれた関数を `main.c` から呼び出そうとすると、コンパイル時に以下のような **Warning（警告）** が出ることがあります。
+別ファイル（`counter.c`）に書かれた関数を `main.c` から呼び出そうとすると  
+コンパイル時に以下のような **Warning（警告）** が出ることがあります。
 
 <div class="bg-gray-800 text-white p-2 rounded text-sm text-left mt-2 overflow-x-auto">
 <pre><code>main.c:19:17: warning: implicit declaration of function 'increment'
