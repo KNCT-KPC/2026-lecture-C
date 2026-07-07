@@ -76,16 +76,25 @@ graph TD
 
 ---
 
+# 演習の準備: テストソース
+
+分割コンパイルを実際に体験するために、テスト用のソースコードを用意しました。  
+以下のボタンからZIPファイルをダウンロードし、展開（解凍）してエディタで開いてください。
+
+<div class="mt-8 mb-4 p-4 bg-blue-50 dark:bg-blue-900 rounded text-center border border-blue-200 dark:border-blue-700 w-2/3 mx-auto">
+  📥 <a href="/source01.zip" download class="font-bold text-blue-600 dark:text-blue-300 underline text-lg">source01.zip をダウンロードする</a>
+</div>
+
+中には `main.c` と `counter.c` の2つのファイルが入っています。
+
+---
+
 # 分割コンパイルの手順 (オブジェクトファイル)
 
 分割コンパイルでは、ソースファイル（`.c`）をいきなり実行ファイルにするのではなく、一度 **「オブジェクトファイル（`.o`）」** という部品に変換します。
 
 <div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
 <div>
-
-<div class="mb-4 p-2 bg-blue-50 dark:bg-blue-900 rounded text-center border border-blue-200 dark:border-blue-700">
-  📥 <a href="/source01.zip" download class="font-bold text-blue-600 dark:text-blue-300 underline">source01.zip をダウンロードする</a>
-</div>
 
 ### 1. オブジェクトファイルの作成
 `-c` オプションをつけると、実行ファイルを作らずにコンパイルだけを行い、`.o` ファイルを作成します。  
