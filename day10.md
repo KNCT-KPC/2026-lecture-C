@@ -78,11 +78,15 @@ graph TD
 
 # 演習の準備: テストソース
 
+<script setup>
+const dlLink = import.meta.env.BASE_URL + 'source01.zip'
+</script>
+
 分割コンパイルを実際に体験するために、テスト用のソースコードを用意しました。  
 以下のボタンからZIPファイルをダウンロードし、展開（解凍）してエディタで開いてください。
 
 <div class="mt-8 mb-4 p-4 bg-blue-50 dark:bg-blue-900 rounded text-center border border-blue-200 dark:border-blue-700 w-2/3 mx-auto">
-  📥 <a href="/source01.zip" download target="_blank" rel="external" class="font-bold text-blue-600 dark:text-blue-300 underline text-lg">source01.zip をダウンロードする</a>
+  📥 <a :href="dlLink" download target="_blank" rel="external" class="font-bold text-blue-600 dark:text-blue-300 underline text-lg">source01.zip をダウンロードする</a>
 </div>
 
 中には `main.c` と `counter.c` の2つのファイルが入っています。
