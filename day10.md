@@ -299,7 +299,7 @@ void increment(void);
 
 # `Makefile` の書き方
 
-`Makefile` という名前のテキストファイルを作成し、**「何から何を作るか」**のルール（構文）を記述します。
+`Makefile` という名前のテキストファイルを作成し、**「何から何を作るか」** のルール（構文）を記述します。
 
 <div class="grid grid-cols-[1fr_1fr] gap-6 mt-4 text-left">
 <div>
